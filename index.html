@@ -30,9 +30,9 @@
                 <div id="MenuNavegacion" class="collapse navbar-collapse justify-content-end">
                     <ul class="navbar-nav ">
                         <li class="nav-item"><a  class="nav-link text-light" href="index.html">La conferencia</a></li>
-                        <li class="nav-item"><a  class="nav-link text-secondary" href="#">Los oradores</a></li>
-                        <li class="nav-item"><a  class="nav-link text-secondary" href="#">El lugar y la fecha</a></li>
-                        <li class="nav-item"><a  class="nav-link text-secondary" href="#">Conviértete</a></li>
+                        <li class="nav-item"><a  class="nav-link text-secondary" href="#oradores">Los oradores</a></li>
+                        <li class="nav-item"><a  class="nav-link text-secondary" href="#city">El lugar y la fecha</a></li>
+                        <li class="nav-item"><a  class="nav-link text-secondary" href="#form">Conviértete</a></li>
                         <li class="nav-item"><a  class="nav-link text-success" href="#">Comprar tickets</a></li>
                     </ul>
                 </div>
@@ -73,7 +73,8 @@
         </div>
       </div>  
 
-      <section>
+    <!-- SECCION ORADORES-->
+      <section id="oradores">
         <h6 class="text-muted text-center mt-5">CONOCE A LOS</h6>
         <h2 class="text-center">ORADORES</h2>
         <div class="cards mx-auto">
@@ -109,11 +110,13 @@
             </div>
         </div>
     </section>
-    <section>
+
+    <!-- SECCION CIUDAD-->
+    <section id="city">
         <div class="card mb-3 mt-5 bg-dark text-white" style="max-width: 100%;">
             <div class="row city">
                 <div class="col-md-6">
-                    <img src="./img/honolulu.jpg" class="card-img" alt="..." width="100%">
+                    <img src="./img/honolulu.jpg" class="card-img" alt="Honolulu" width="100%">
                 </div>
                 <div class="col-md-6 ">
                     <div class="card-body">
@@ -126,7 +129,8 @@
         </div>
     </section>
 
-    <section>
+   <!-- SECCION FORMULARIO-->
+    <section id="form">
         <h6 class="text-muted text-center mt-5">CONVERTITE EN UN</h6>
         <h2 class="text-center">ORADOR</h2>
         <p class="text-muted text-center">Anótate como orador para dar una <span>charla ignite</span>. ¡Cuéntanos sobre qué quieres hablar!</p>
@@ -142,35 +146,40 @@
             <div class="row mt-4">
                 <div class="col-md-12 form-group">
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="Sobre que queres hablar?"></textarea>
-                    <small id="passwordHelpBlock" class="form-text text-muted">
+                    <p class="form-text text-muted">
                         Recuerda incluir un titulo para tu charla
-                    </small>
+                    </p>
                 </div>
             </div>
             <button type="submit" class="btn bg-success text-white boton">Enviar</button>
         </form>
     </section>
-    <footer class="bg-dark mt-5">
+
+    <!-- FOOTER-->
+    <footer class="footer bg-primary mt-5">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light justify-content-center text-center">
-                <ul class="navbar-nav">
-                    <li class="nav-item marginFooter">
-                    <a class="nav-link text-white" href="#">Preguntas Frecuentes<span class="sr-only"></span></a>
+            <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center text-center">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Preguntas frecuentes</a>
                     </li>
-                    <li class="nav-item marginFooter">
-                        <a class="nav-link text-white" href="#">Contactanos<span class="sr-only"></span></a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contáctanos</a>
                     </li>
-                    <li class="nav-item marginFooter">
-                        <a class="nav-link text-white" href="#">Prensa<span class="sr-only"></span></a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Prensa</a>
                     </li>
-                    <li class="nav-item marginFooter">
-                        <a class="nav-link text-white" href="#">Terminos y condiciones<span class="sr-only"></span></a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Conferencias</a>
                     </li>
-                    <li class="nav-item marginFooter">
-                        <a class="nav-link text-white" href="#">Privacidad<span class="sr-only"></span></a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Terminos y condiciones</a>
                     </li>
-                    <li class="nav-item marginFooter">
-                        <a class="nav-link text-white" href="#">Estudiantes<span class="sr-only"></span></a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Privacidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Estudiantes</a>
                     </li>
                 </ul>
             </nav>
