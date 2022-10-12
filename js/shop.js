@@ -3,13 +3,10 @@ window.onload = function () {
   //accedo al primer formulario de la pagina
   //se crea automatic, el array elements por cada formulario
 
-  //Creare dos eventos para cuando se les de click al boton
+  //Creare los eventos para cuando se les de click al boton
   const container = document.getElementById('containerTicket')
-  // const container2 = document.getElementById("sabores");
-
   const sendButton = document.getElementById('send-button')
   const completar = document.getElementById('completar')
-
   const finish = document.getElementById('finish')
 
   //Sucederán dos eventos, cuando se envie el formulario: la validacion y la compra
@@ -17,7 +14,6 @@ window.onload = function () {
 
   product_list = [] //Declaro un array vacio por que aqui ira lo que el cliente agregue//
   let ids = 0 //Para que a cada objeto se le agregue un id unico
-
   let elementos = document.forms[0].elements //Para acceder a los elementos, primero se obtiene el primer elemento del primer formulario, los elementos estan con name
 
   //Validacion de eleccion del cliente
@@ -30,7 +26,6 @@ window.onload = function () {
     let opciones = ['Estudiante', 'Trainee', 'Junior']
 
     let categoria = elementos[0].value //Seleccionar la categoria
-    // let sabor = elementos[1].value; //Selecciona lo que desea
     let cantidad = elementos[1].value //El segundo campo no puede ser nulo, no puede tener longitud de 0, la tercera condicion indica que no pueden ser solo espacios vacios
 
     if (categoria.selectedIndex == 0) {
@@ -98,7 +93,6 @@ window.onload = function () {
         <input type="button" class="btn btn-outline-light bg-success w-100" name="delete" value="Eliminar">
         
         `
-
       //Añadir este elemento en la pantalla
       container.appendChild(element)
 
@@ -144,7 +138,7 @@ window.onload = function () {
           text:
             'Se ha enviado un email a su correo con el detalle de la reserva.',
           icon: 'info',
-          width: '60%',
+          width: '90%',
         })
       }, 2000)
     }
